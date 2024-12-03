@@ -53,10 +53,10 @@ public class Account{
 	
 	private void validWithdraw(double amount) {
 		if(amount > getWithdrawLimit()) {
-			throw new DomainExceptions("A quantia excede o limite de saque");
+			throw new DomainExceptions("The amount exceeds the withdrawal limit");
 		} 
 		if(amount > getBalance()) {
-			throw new DomainExceptions("Saldo insuficiente") ;
+			throw new DomainExceptions("Insufficient balance") ;
 		}
 
 	}
